@@ -1,0 +1,126 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #030303; /* Primary blue color */
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff; /* White text color */
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff; /* White text color for navigation links */
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link:hover,
+  .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #0f0f10; /* Hover color for links */
+    background-color: #fff; /* White background on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  .navbar .dropdown-menu {
+    background-color: #0c0c0c; /* Primary blue color */
+  }
+  
+  .navbar .dropdown-menu .dropdown-item {
+    color: hsl(197, 19%, 93%); /* White text color for dropdown items */
+  }
+  
+  .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+  }
+  
+  /* Logout Button Styles */
+  .btn-outline-danger {
+    color: #fff; /* White text color */
+    
+    border-color: #dc3545; /* Danger red border color */
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545; /* Danger red background on hover */
+    border-color: #dc3545; /* Danger red border color */
+  }
+  
+  /* Dashboard Content Styles */
+  .container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .container h2 {
+    color: #007bff; /* Primary blue color for headings */
+  }
+  
+  .container p {
+    color: #767a7d; /* Secondary grey color for paragraphs */
+  }
+
+  /* Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(127, 165, 205, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(238, 117, 208, 0.2);
+}
+
+.card-title {
+  background-color:rgb(136, 198, 243);;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-body h6 {
+  margin: 0;
+  font-size: 16px;
+  color:black;
+}
+
+/* Responsive Padding for Cards */
+@media (max-width: 576px) {
+  .col-lg-3, .col-md-4, .col-sm-6 {
+    padding: 5px;
+  }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  background-color:rgb(136, 198, 243);;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px white;
+}
+
+.faq-section h3 {
+  color:black;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-item h5 {
+  color: #f2f5f8;
+  font-weight: bold;
+}
+
+.faq-item p {
+  color: #e8edae;
+  margin: 0;
+}

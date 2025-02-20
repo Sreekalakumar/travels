@@ -1,0 +1,40 @@
+    <nav class="navbar navbar-expand-lg navbar-dark bf -dark">
+        <a class="navbar-brand" >YouBookings</a>
+        <div>
+            <button class="btn btn-primary " routerLink="/dashboard">Back</button>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+      <h4>Book yours</h4>
+      
+        <div class="form-group">
+            <label for="Ticket no">Ticket No:</label>
+            <input type="tel" class="form-control" id="last" [(ngModel)]="travel.ticket_no" size="20" maxlength="37" placeholder="enter your ticket no">
+        </div><br> 
+        <div class="form-group" >
+            <label for="Name"> Name:</label>
+            <input type="text" class="form-control" id="first" [(ngModel)]="travel.name" size="20" maxlength="37" placeholder="Enter your name ">
+        </div><br>
+        <div class="form-group">
+            <label for="Mobile Number">Mobile Number:  </label>
+            <input type="tel"  class="form-control" id="num" [(ngModel)]="travel.mobile_number" size="20" maxlength="37" placeholder="Mobile number" >
+        </div><br>
+        <div class="form-group" >
+            <label for="Date of Birth">Date of Booking:</label>
+            <input type="date" id="Date"  [(ngModel)]="travel.date_of_booking" class="form-control" size="20"  placeholder="YYYY-MM-DD">
+        </div><br>
+        <div class="form-group">
+            <label for="Place from">Place from:</label>
+            <input type="text" class="form-control" [(ngModel)]="travel.place_from" id="Emai" size="20" maxlength="37"  >
+        </div><br>
+        <div class="form-group">
+            <label >Place to:  </label>
+            <input type="text"  class="form-control" [(ngModel)]="travel.place_to" id="add"  size="20" maxlength="37">
+        </div><br>
+        <button type="submit" class="btn btn-primary "  (click)="Book()" routerLink="/dashboard">Book</button>
+   </div> <br><br>
+
+
+  
+  

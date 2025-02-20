@@ -1,0 +1,133 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-expand-md ">
+      <div class="container-fluid">
+          <div class="navbar-brand">
+              <h3>
+                  youBookings</h3>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  
+
+                  <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item"  routerLink="/book">Book</a></li>
+                          <li><a class="dropdown-item" routerLink="/edit">Edit</a></li>
+                          <li><a class="dropdown-item" routerLink="/show">Show</a></li>
+                          <li><a class="dropdown-item" routerLink="/cancel">Cancel</a></li>
+                          <li><a class="dropdown-item" routerLink="/filterid">Filter_id</a></li>
+                          <li><a class="dropdown-item" routerLink="/filtername">Filter_name</a></li>
+                        </ul>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-outline-danger"   routerLink="/home">Logout</button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+<h4>Welcome to the  YouBooking Dashboard!</h4>
+<div class="container-fluid">
+    <div class="row m-4">
+        <div class="col-lg-3 col-md-4 col-sm-6" style="padding: 10px;">
+            <div class="card">
+                <div class="card-title">
+                    <h5>saveup to Rs250 on bus tickets</h5>
+                    <div class="card-body">
+                        <h6>valid till 31 jan</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="padding: 10px;">
+            <div class="card">
+                <div class="card-title">
+                    <h5>people booked </h5>
+                    <div class="card-body">
+                        <h6>25,000+</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="padding: 10px;">
+            <div class="card">
+                <div class="card-title">
+                    <h5>free cancellation</h5>
+                    <div class="card-body">
+                        <h6>100% refund</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="padding: 10px;">
+            <div class="card">
+                <div class="card-title">
+                    <h5>24*7</h5>
+                    <div class="card-body">
+                        <h6>customer support</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+<div >
+    <table class="table table-stripped table-hover" >
+        <thead class="table-stripped table-dark">
+            <tr>
+                <th scope="col" >Ticket_NO</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile_number</th>
+                <th scope="col"> date_of_booking</th>
+                <th scope="col">place_from</th>
+                <th scope="col"> place_to</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let t of trav_dash">
+            <tr>
+                <td class="table-dark table-stripped ">{{t.ticket_no}}</td>
+                <td>{{t.name}}</td>
+                <td>{{t.mobile_number}}</td>
+                <td>{{t.date_of_booking}}</td>
+                <td>{{t.place_from}}</td>
+                <td>{{t.place_to}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<div class="container mt-5"> 
+    
+    <!-- FAQs Section --> 
+     <div class="faq-section mt-5">
+         <h3>Bus Ticket Booking FAQs</h3>
+        
+         <div class="faq-item"> 
+            <h5>Can I book state government operated bus tickets on YouBooking</h5>
+            <p>Yes, you can book state government operated bus tickets on redBus...</p> 
+        </div> 
+        <div class="faq-item"> 
+            <h5>What are the different payment options available on bus ticket booking?</h5>
+            <p>YouBooking offers various payment options including credit/debit cards, net banking, and more...</p>
+         </div>
+          
+           <div class="faq-item"> 
+                <h5>Do I need to create an account on the YouBooking site to book my bus ticket?</h5>
+                <p>No, you can book bus tickets on YouBooking without creating an account...</p> 
+            </div> 
+             <div class="faq-item"> 
+                <h5>Why book bus tickets online on YouBooking</h5>
+                <p>Booking bus tickets online on YouBooking is convenient, quick, and offers various discounts...</p> 
+            </div> 
+           
+         </div>

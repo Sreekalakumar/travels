@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bf -dark">
+    <a class="navbar-brand" >YouBookings</a>
+    <div>
+        <button class="btn btn-primary " routerLink="/dashboard">Back</button>
+    </div>
+</nav>
+
+<div class="container mt-5">
+  <h4>fetch your plan</h4>
+  
+    <div class="form-group" >
+        <label for="Name"> Name:</label>
+      <input type="text" class="form-control" [(ngModel)]="tic_name" id="first" size="20" maxlength="37" placeholder="Enter your name ">
+     <!----<select class="form_size" id="first" name="drop" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select><br>-->
+        
+    </div><br>
+    <button type="submit" class="btn btn-primary " (click)="get_Name(tic_name)" >show</button>
+
+</div>   <br><br>
+
+<div >
+    <table class="table table-stripped table-hover" >
+        <thead class="table-stripped table-dark">
+            <tr>
+                <th scope="col" >Ticket_NO</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile_number</th>
+                <th scope="col"> date_of_booking</th>
+                <th scope="col">place_from</th>
+                <th scope="col"> place_to</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let t of travel_array">
+            <tr>
+                <td class="table-dark table-stripped ">{{t.ticket_no}}</td>
+                <td>{{t.name}}</td>
+                <td>{{t.mobile_number}}</td>
+                <td>{{t.date_of_booking}}</td>
+                <td>{{t.place_from}}</td>
+                <td>{{t.place_to}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+

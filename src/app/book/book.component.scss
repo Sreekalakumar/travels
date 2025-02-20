@@ -1,0 +1,38 @@
+/* Bookings Form Styles */
+.navbar{
+    background-color: #050505;
+}
+.navbar .navbar-brand{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-item{
+    background-color: white;
+}
+.label{
+  width: 50px;
+  display: inline;
+}
+.container {
+    background-color:rgb(136, 198, 243);
+    margin-top: 10px;
+    
+  }
+  
+  h2 {
+    color: #007bff; /* Primary blue color */
+  }
+  
+  .form-group label {
+    color: #6c757d; /* Secondary grey color */
+  }
+  
+  .btn-primary {
+    background-color: #117fec; /* Primary blue color */
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    
+    border-color: #0056b3;
+  }
